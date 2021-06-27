@@ -2,7 +2,6 @@ var table=document.createElement('table');
 table.setAttribute('class','table');
 var tr1=document.createElement('tr');
 var s=document.getElementById("screen");
-s.setAttribute('colspan','3')
 tr1.append(s);
 
 var tr2=document.createElement('tr');
@@ -25,7 +24,7 @@ var tr4=document.createElement('tr');
 var seven=but("7");
 var eight=but("8");
 var nine=but("9");
-var mult=but("X");
+var mult=but("*");
 var bracc=but(")")
 tr4.append(seven,eight,nine,mult,bracc);
 
@@ -46,11 +45,8 @@ function but(butval){
    tryy.addEventListener('click',dis);
    tryy.innerText=butval;
    return tryy;
-    //document.body.append(tryy); 
     function dis(){
-     
      document.getElementById("screen").value+=tryy.innerText;
-     //tryy.value+=n;
  }
    }
    
