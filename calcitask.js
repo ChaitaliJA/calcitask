@@ -45,11 +45,9 @@ function but(butval){
    tryy.addEventListener('click',dis);
    tryy.innerText=butval;
    return tryy;
-    //document.body.append(tryy); 
     function dis(){
      
      document.getElementById("screen").value+=tryy.innerText;
-     //tryy.value+=n;
  }
    }
    
